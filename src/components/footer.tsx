@@ -13,7 +13,7 @@ export function Footer() {
         </div>
         <div className="flex items-center gap-4">
           <a
-            href="https://github.com"
+            href="https://github.com/Manan-Santoki/markdown2pdf-studio"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground transition-colors hover:text-foreground"
