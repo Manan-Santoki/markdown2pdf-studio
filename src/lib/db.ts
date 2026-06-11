@@ -27,7 +27,7 @@ function createClient(): ReturnType<typeof postgres> {
 
 // Lazy: don't connect (or fail) at module import time so `next build` succeeds
 // even when DATABASE_URL isn't set. The first actual query triggers the connect.
-function getSql(): ReturnType<typeof postgres> {
+export function getSql(): ReturnType<typeof postgres> {
   if (!globalThis.__binderlyPg) {
     globalThis.__binderlyPg = createClient();
   }
